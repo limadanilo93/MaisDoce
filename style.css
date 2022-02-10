@@ -21,7 +21,8 @@ body {
 
 .portofolio {
   color: white;
-  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+  background: radial-gradient(#5cc3b3, #1c574e);
+  
 }
 
 nav {

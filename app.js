@@ -8,13 +8,13 @@ function init() {
   ];
   //Tracker
   let current = 0;
-  let scrollSlide = 0;
+  let rolagem = 0;
 
   slides.forEach((slide, index) => {
     slide.addEventListener("click", function() {
       changeDots(this);
       nextSlide(index);
-      scrollSlide = index;
+      rolagem = index;
     });
   });
 
@@ -87,20 +87,20 @@ function init() {
 
   function scrollChange(e) {
     if (e.deltaY > 0) {
-      scrollSlide += 1;
+      rolagem += 1;
     } else {
-      scrollSlide -= 1;
+      rolagem -= 1;
     }
 
-    if (scrollSlide > 2) {
-      scrollSlide = 0;
+    if (rolagem > 2) {
+      rolagem = 0;
     }
-    if (scrollSlide < 0) {
-      scrollSlide = 2;
+    if (rolagem < 0) {
+      rolagem = 2;
     }
-    switchDots(scrollSlide);
-    nextSlide(scrollSlide);
-    console.log(scrollSlide);
+    switchDots(rolagem);
+    nextSlide(rolagem);
+    
   }
 
   const hamburger = document.querySelector(".menu");
@@ -143,3 +143,4 @@ function throttle(func, limit) {
 }
 
 init();
+loadPage();

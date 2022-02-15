@@ -280,4 +280,17 @@ nav {
   .pages svg {
     transform: scale(1);
   }
+  .model-right {
+    transform: translate(0%, 0%);
+  }
+  .model-left {
+    transform: translate(0%, 0%);
+  }
+  
+  .hero:hover .model-right {
+    transform: translate(0%, 10%);
+  }
+  .hero:hover .model-left {
+    transform: translate(0%, -10%);
+  }
 }

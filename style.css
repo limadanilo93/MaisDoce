@@ -265,6 +265,7 @@ nav {
   .nav-open h3 {
     font-size: 22px;
     padding-bottom: 20px;
+    margin-top: 10vh;
   }
   .nav-open p {
     font-size: 14px;
@@ -273,8 +274,8 @@ nav {
     padding: 0px 10px;
   }
   .nav-open {
-    height: 40vh;
-    
+    height: 35vh;
+            
   }
   .pages svg {
     transform: scale(1);

@@ -143,4 +143,4 @@ function throttle(func, limit) {
 }
 
 init();
-loadPage();
+
